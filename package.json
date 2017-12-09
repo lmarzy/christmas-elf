@@ -1,0 +1,32 @@
+{
+  "name": "kickstart-static",
+  "version": "0.0.1",
+  "description": "Kickstarter for a new static site build",
+  "main": "index.js",
+  "repository": "https://github.com/lmarzy/kickstart-static.git",
+  "author": "Lee Marsden",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "jekyll": "jekyll build --destination dist",
+    "jekyll:incremental": "jekyll build --incremental --destination dist",
+    "stylelint": "stylelint assets/styles/**/**/*.scss",
+    "sass": "node-sass --source-map=true assets/css/main.scss -o dist/assets",
+    "build": "yarn run clean && yarn run jekyll && yarn run stylelint && yarn run sass"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.2",
+    "css-mqpacker": "^6.0.1",
+    "eslint": "^4.13.0",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2",
+    "postcss-cli": "^4.1.1",
+    "postcss-focus": "^3.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-vr": "^3.0.1",
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0"
+  }
+}
