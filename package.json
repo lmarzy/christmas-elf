@@ -11,13 +11,21 @@
     "jekyll": "jekyll build --destination dist",
     "jekyll:incremental": "jekyll build --incremental --destination dist",
     "stylelint": "stylelint assets/styles/**/**/*.scss",
-    "sass": "node-sass --source-map=true assets/css/main.scss -o dist/assets",
-    "build": "yarn run clean && yarn run jekyll && yarn run stylelint && yarn run sass"
+    "sass:dev": "node-sass --source-map=true assets/css/main.scss -o dist/assets",
+    "sass:prod": "node-sass assets/css/main.scss -o dist/assets --output-style compressed",
+    "js:dev": "webpack",
+    "js:prod": "webpack -p",
+    "build": "yarn run clean && yarn run jekyll && yarn run stylelint && yarn run sass && yarn run js:dev"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.2",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
     "css-mqpacker": "^6.0.1",
     "eslint": "^4.13.0",
+    "eslint-loader": "^1.9.0",
     "imagemin-cli": "^3.0.0",
     "node-sass": "^4.7.2",
     "onchange": "^3.3.0",
@@ -27,6 +35,7 @@
     "postcss-pxtorem": "^4.0.1",
     "postcss-vr": "^3.0.1",
     "stylelint": "^8.3.1",
-    "stylelint-config-standard": "^18.0.0"
+    "stylelint-config-standard": "^18.0.0",
+    "webpack": "^3.10.0"
   }
 }
