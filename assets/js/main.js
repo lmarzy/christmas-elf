@@ -1,3 +1,4 @@
-const x = 10;
+import upper from './modules/uppercase/uppercase';
 
-console.log(x);
+console.log(upper('str'));
+

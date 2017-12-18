@@ -14,6 +14,7 @@
     "sass": "node-sass --source-map=true assets/css/main.scss -o dist/assets",
     "postcss": "postcss -r dist/assets/*.css",
     "build:css": "yarn run sass && yarn run postcss",
+    "tape": "babel-tape-runner assets/js/**/*.test.js",
     "js": "webpack",
     "images": "imagemin assets/img/* -o dist/assets/img",
     "htmlMin": "html-minifier --input-dir dist --output-dir dist --collapse-whitespace --file-ext html",
@@ -33,6 +34,7 @@
     "babel-eslint": "^8.0.3",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-tape-runner": "^2.0.1",
     "browser-sync": "^2.18.13",
     "css-mqpacker": "^6.0.1",
     "eslint": "^4.13.0",
@@ -49,6 +51,7 @@
     "postcss-vr": "^3.0.1",
     "stylelint": "^8.3.1",
     "stylelint-config-standard": "^18.0.0",
+    "tape": "^4.8.0",
     "uglify-js": "^3.2.2",
     "webpack": "^3.10.0"
   }
