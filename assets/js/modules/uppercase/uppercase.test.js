@@ -1,10 +1,7 @@
-import tape from 'tape';
-import uppercase from './uppercase';
+import test from 'ava';
+import upper from './uppercase';
 
-tape('Convert to uppercase', (t) => {
-  const value = uppercase('str');
-
-  t.equal(value, 'STR');
-  
-  t.end();
+test('Converts a string to uppercase', t => {
+  const value = upper('str');
+	t.is(value, 'STR');
 });
