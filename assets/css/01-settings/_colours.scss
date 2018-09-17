@@ -3,14 +3,16 @@
 // ========================================================================
 
 // PAGE
-$col-bg             : #fff;
-$col-text           : rgb(68, 68, 68);
+$col-bg             : #f4f1ec;
+$col-text           : #bdbcb8;
+
+$col-red            : #711d1d;
+$col-green          : #55896c;
+$col-yellow         : #ffb400;
 
 // LINKS
-$col-links          : rgb(5, 94, 219);
-$col-links-hover    : rgb(5, 42, 161);
-$col-links-active   : rgb(166, 11, 255);
-$col-links-visited  : rgb(240, 59, 59);
+$col-link           : $col-green;
+$col-link-hover     : darken($col-green, 5);
 
 // MISC
-$col-borders        : #ccc;
+$col-border         : #ccc;

@@ -6,6 +6,7 @@ const paths = {
 };
 
 module.exports = {
+  mode: 'none',
   entry: join(paths.SRC, 'main.js'),
   output: {
     path: paths.DIST,

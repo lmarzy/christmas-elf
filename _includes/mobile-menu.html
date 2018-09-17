@@ -1,0 +1,7 @@
+<ul class="c-mobile-menu">
+    {% for link in site.data.mobile-menu %}
+    <li class="c-mobile-menu_item">
+        <a href="{{ link.url }}.html" class="c-mobile-menu_link">{{ link.name }}</a>
+    </li>
+    {% endfor %}
+</ul>

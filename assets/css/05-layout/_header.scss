@@ -2,6 +2,13 @@
 // PARTIALS/HEADER
 // ========================================================================
 
-/* stylelint-disable */
-.l-site-header {}
-/* stylelint-enable */
+.l-site-header {
+  padding-top: spacer(2);
+  text-align: center;
+
+  &_logo {
+    display: inline-block;
+    width: 140px;
+    margin-bottom: spacer(2);
+  }
+}

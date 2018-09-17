@@ -6,7 +6,7 @@ email: me@phz3.net
 description: 'Yada Bada'
 year: 2017
 # baseurl: "" # the subpath of your site, e.g. /blog
-# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.christmaself.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
@@ -14,9 +14,9 @@ year: 2017
 markdown: kramdown
 plugins:
   - jekyll-feed
-permalink: /posts/:categories/:title
+permalink: /posts/:title
 
-include: ["_pages"]
+include: ["_pages", "_products"]
 
 # Exclude
 exclude:

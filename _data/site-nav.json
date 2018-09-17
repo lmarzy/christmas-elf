@@ -1,10 +1,22 @@
 [
   {
-    "name": "Link one",
-    "url": "/linkone"
+    "name": "Home",
+    "url": "/",
+    "icon": "home"
   },
   {
-    "name": "Link two",
-    "url": "/linktwo"
+    "name": "Product Range",
+    "url": "/products",
+    "icon": "products"
+  },
+  {
+    "name": "Contact Us",
+    "url": "/contact",
+    "icon": "contact"
+  },
+  {
+    "name": "Basket",
+    "url": "/basket",
+    "icon": "basket"
   }
 ]
