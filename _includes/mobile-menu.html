@@ -1,7 +1,11 @@
 <ul class="c-mobile-menu">
     {% for link in site.data.mobile-menu %}
+    {% capture icon %}{{ link.icon }}{% endcapture %}
     <li class="c-mobile-menu_item">
-        <a href="{{ link.url }}.html" class="c-mobile-menu_link">{{ link.name }}</a>
+        <button type="button" class="c-mobile-menu_link">
+            {% include icon.html icon=icon %}
+            <span class="u-hidden-visually">{{ link.name }}</span>
+        </button>
     </li>
     {% endfor %}
 </ul>
