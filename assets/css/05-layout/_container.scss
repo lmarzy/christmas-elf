@@ -3,9 +3,5 @@
 // ========================================================================
 
 .l-container {
-  max-width: $max-width;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: $gutter;
-  padding-right: $gutter;
+  @include container;
 }

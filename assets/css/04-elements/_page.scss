@@ -22,6 +22,7 @@ html {
   line-height: $line-height;
   color: $col-text;
   background-color: $col-bg;
+  border-top: 5px solid $col-red;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }

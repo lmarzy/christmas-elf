@@ -4,14 +4,23 @@ title: home
 permalink: index.html
 ---
 
-Index page
+<div class="l-container">
 
-<ul>
-  {% for post in site.posts %}
-    {% unless post.categories contains 'blog' %}
-      <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-    {% endunless %}
-  {% endfor %}
-</ul>
+  <div class="l-grid">
+
+    <div class="l-grid_span12 l-grid_span8@bp10">one</div>
+    <div class="l-grid_span12 l-grid_span4@bp10">two</div>
+
+  </div>
+
+  <ul>
+    {% for post in site.posts %}
+      {% unless post.categories contains 'blog' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+
+</div>

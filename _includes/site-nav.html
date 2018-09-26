@@ -1,16 +1,20 @@
-<nav id="js-siteNav" class="c-site-nav {{ include.modifier }}">
+<nav id="js-siteNav" class="c-site-nav">
   <button type="button" id="js-closeNav" class="c-site-nav_close">
     {% include icon.html icon="close" %}
   </button>
+  <div class="c-site-nav_container">
   <ul class="c-site-nav_items">
     {% for link in site.data.site-nav %}
     {% capture icon %}{{ link.icon }}{% endcapture %}
     <li class="c-site-nav_item">
         <a href="{{ link.url }}.html" class="c-site-nav_link">
-          {% include icon.html icon=icon %}
-          {{ link.name }}
+          {% if link.icon %}
+            {% include icon.html icon=icon %}
+          {% endif%}
+          <span>{{ link.name }}</span>
         </a>
     </li>
     {% endfor %}
   </ul>
+  </div>
 </nav>

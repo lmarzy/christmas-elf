@@ -1,18 +1,19 @@
 [
   {
     "name": "Home",
-    "url": "/",
-    "icon": "home"
+    "url": "/"
+  },
+  {
+    "name": "Christmas Elf",
+    "url": "/products/christmas-elf"
   },
   {
     "name": "Product Range",
-    "url": "/products",
-    "icon": "products"
+    "url": "/products"
   },
   {
     "name": "Contact Us",
-    "url": "/contact",
-    "icon": "contact"
+    "url": "/contact"
   },
   {
     "name": "Basket",
